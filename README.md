@@ -93,10 +93,99 @@ Ensure that the Excel file used contains relevant customer and product informati
 ##### Following these steps will enable you to install the necessary library, prepare the Excel file, and successfully run the 'price_finder' project for streamlined price retrieval based on customer queries and product information. Adjustments to the Excel file structure or code may be required based on your specific file format or preferences.
 
 ## Code Review
-Go over key aspects of code in this section. Both link to the file, include snippets in this report (make sure to use the [coding blocks](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)).  Grading wise, we are looking for that you understand your code and what you did. 
+
+### get_info() Function:
+Purpose: Retrieves detailed information about a product from the Excel sheet.
+```python
+def get_info(product_name, row, product):
+    '''
+    Function get_info:
+    Retrieves information about a product.
+    Args:
+        product_name(str): The name of the product.
+        row(str): The row where the product information is located.
+        product(str): The product information.
+    Returns:
+        info(str): Information about the product.
+    '''
+    # Extracts product details such as customer, price, quantity, unit, and date
+    # Constructs and returns a formatted string containing product information
+```
+Key Points:<br>
+Extracts data from specified columns corresponding to the product.<br>
+Formats the retrieved information into a string.<br>
+Provides details about the product, including customer, price, quantity, unit, and date.<br>
+
+### find_price_for_all_products() and find_price_for_customer() Functions:
+find_price_for_all_products() Purpose: Locates prices for a specific product across all customers.<br>
+find_price_for_customer() Purpose: Finds prices for a specific product for a given customer.<br>
+
+```python
+def find_price_for_all_products(product_name):
+    '''
+    Function find_price_for_all_products
+    Finds prices for a specific product across all customers.
+    Args:
+        product_name(str): The name of the product.
+    Returns:
+        price_list(list): List containing product info for all customers.
+    '''
+    # Searches for prices of a particular product across all customers
+    # Uses get_info() to gather product details
+    # Constructs and returns a list containing information of the product for all customers
+```
+
+```python
+def find_price_for_customer(customer_name, product_name):
+    '''
+    Function find_price_for_customer
+    Finds prices for a specific product for a given customer.
+    Args:
+        customer_name(str): The name of the customer.
+        product_name(str): The name of the product.
+    Returns:
+        price_list(list): List containing product info for the customer.
+    '''
+    # Searches for prices of a specific product for a given customer
+    # Uses get_info() to gather product details
+    # Constructs and returns a list containing information of the product for the customer
+```
+Key Points:<br>
+Utilizes get_info() to gather specific product information.<br>
+Constructs and returns a list containing product information based on the search criteria (all customers or a specific customer).<br>
+
+### find_price() Function:
+Purpose: Gathers and prints the last three purchased products' details for the specified customer based on user input.
+
+```python
+def find_price(customer_name, product_names):
+    '''
+    Function find_price
+    Finds prices for specific products and customers.
+    Args:
+        customer_name(str): The name of the customer.
+        product_names(list): List of product names.
+    Returns:
+        None
+    '''
+    # Orchestrates find_price_for_all_products() or find_price_for_customer() based on user input
+    # Gathers and prints the last three purchased products' details for the specified customer
+```
+
+Key Points:<br>
+Based on user input, choose between searching for prices for all customers or a specific customer.<br>
+Retrieves the last three purchased product details using find_price_for_all_products() or find_price_for_customer() and then prints them.<br>
 
 ### Major Challenges
-Key aspects could include pieces that your struggled on and/or pieces that you are proud of and want to show off.
+#### Challenges: Refactoring a huge Function into Smaller Functions
+
+Initial State: Initially, the code might have had a single large function responsible for tasks like retrieving product information, searching prices for all products across customers, finding prices for specific customers, and displaying results.
+
+Refactoring Process: The challenge involved breaking down this huge function into smaller, more specialized functions, such as get_info(), find_price_for_all_products(), find_price_for_customer(), find_price(), and more. Each smaller function took on a specific responsibility related to its name, making the code modular and easier to comprehend.
+
+#### Proud Aspects: Successfully restructuring the code into smaller functions that increased code clarity, readability, and maintainability. 
+
+Outcome: The refactored code comprised several smaller functions, each handling a specific task, leading to a more modular and maintainable codebase. This made future enhancements, bug fixes, and understanding of the code easier for developers.
 
 
 ## Example Runs
