@@ -1,21 +1,50 @@
 # Final Project Report
 
-* Student Name:
-* Github Username:
-* Semester:
-* Course:
+* Student Name: Fan Chen
+* Github Username: sqcgl
+* Semester: FW23
+* Course: CS5001
 
 
 
 ## Description 
-General overview of the project, what you did, why you did it, etc. 
+I developed the 'price_finder' project to streamline the process of checking product prices for different customers. Working in a wholesale company, I frequently encounter varying prices for items depending on the customer. This program is aimed at easing the invoice creation process by quickly retrieving and displaying the last three purchased products for a specific customer from an Excel sheet exported from QuickBooks.
 
 
 ## Key Features
-Highlight some key features of this project that you want to show off/talk about/focus on. 
+Customer-Centric Pricing: Allows the user to find prices based on customer names.
+Product Price Retrieval: Fetches and displays the last 3 purchased products for a customer.
+Excel Integration: Utilizes the 'openpyxl' library to interact with Excel files, enabling easy data extraction.
+User-Friendly Interface: Offers a simple command-line interface for easy interaction.
 
 ## Guide
-How do we run your project? What should we do to see it in action? - Note this isn't installing, this is actual use of the project.. If it is a website, you can point towards the gui, use screenshots, etc talking about features. 
+Running the Project
+
+Launch the Program:
+  Run the Python script price_finder.py in your terminal or preferred Python environment.
+
+User Menu:
+  Upon running the program, a menu will be displayed:
+     Welcome:
+    check price: -c
+    change workbook: -wb
+    quit: -q
+  Use the following commands to navigate the menu:
+  -c: Allows you to check prices by entering customer names and product queries.
+  -wb: Enables changing the active Excel workbook by entering a new workbook path.
+  -q: Quits the program and closes the workbook.
+
+Check Price (-c Option):
+  Enter -c to check prices.
+  Input the customer's name when prompted.
+  Enter the product names or type done to conclude product entries.
+  The program will display the last three purchased products for the specified customer.
+
+Change Workbook (-wb Option):
+  Use -wb to change the active Excel workbook.
+  Enter the new workbook file path when prompted.
+  The program will switch to the specified workbook for further operations.
+
 
 
 ## Installation Instructions
