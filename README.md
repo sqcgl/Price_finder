@@ -39,9 +39,9 @@ What would you like to do?
 ```
 
 Use the following commands to navigate the menu:<br>
--c: Allows you to check prices by entering customer names and product queries.<br>
--wb: Enables changing the active Excel workbook by entering a new workbook path.<br>
--q: Quits the program and closes the workbook.<br>
+- -c: Allows you to check prices by entering customer names and product queries.<br>
+- -wb: Enables changing the active Excel workbook by entering a new workbook path.<br>
+- -q: Quits the program and closes the workbook.<br>
 
 ### Check Price (-c Option):
 1. Enter -c to check prices.<br>
