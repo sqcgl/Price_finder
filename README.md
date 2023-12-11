@@ -233,7 +233,7 @@ Added Testing (if necessary): Further tests can be added to the 'test_price_find
 - Future Consideration: Despite the current limitations, these features are easily adjustable within the codebase and can be included in future iterations or by contributors.
 ### Testing File and Unit Testing:
 - Existing State: The provided 'test_price_finder.py' file includes tests for various functionalities, but some limitations exist.
-- Manual Verification: As certain functions output results through print statements, manual testing is required.
+- Manual Verification: As certain functions output results through print statements, manual testing is required. However, a lot of manual test has done in real_world application.
 - Handling Edge Cases: For instance, in functions like 'find_price_for_customer,' entering a non-existing customer returns an empty list but also prints "customer not found."
 - Understanding Unit Tests: The current testing methodology relies on manual checks and does not fully utilize unit tests, representing a potential area for improvement.
 - Future Improvement: Consider improving the testing process by delving deeper into unit testing frameworks to automate and validate various functionalities systematically.
