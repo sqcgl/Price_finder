@@ -233,6 +233,13 @@ Added Testing (if necessary): Further tests can be added to the 'test_price_find
 - Time Constraints: Limited time availability due to prioritizing code refactoring and function decomposition, preventing the addition of advanced features like API integration and UI enhancements.
 - Future Consideration: Despite the current limitations, these features are easily adjustable within the codebase and can be included in future iterations or by contributors.
 
+### Testing File and Unit Testing:
+- Existing State: The provided 'test_price_finder.py' file includes tests for various functionalities, but some limitations exist.
+- Manual Verification: As certain functions output results through print statements, manual testing is required.
+- Handling Edge Cases: For instance, in functions like 'find_price_for_customer,' entering a non-existing customer returns an empty list but also prints "customer not found."
+- Understanding Unit Tests: The current testing methodology relies on manual checks and does not fully utilize unit tests, representing a potential area for improvement.
+- Future Improvement: Consider improving the testing process by delving deeper into unit testing frameworks to automate and validate various functionalities systematically.
+
 ## Final Reflection
 Creating this project was a rewarding experience as it marked my first meaningful application of programming skills to solve a real work-related challenge. It significantly reduced the time spent on daily invoicing tasks, saving at least 50% of my time compared to manual Excel checks. While Excel has a search function, finding specific products across multiple stores remained cumbersome, motivating me to create this tool.
 
