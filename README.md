@@ -216,7 +216,6 @@ Key Aspects:
 #### Outcome:
 - Successful Functionality: All functions have been systematically tested through an automated test program, ensuring their correctness and reliability.
 - Real-world Application: The program has been used extensively in daily tasks without encountering errors, proving its stability and suitability for production use.
-- 
 Added Testing (if necessary): Further tests can be added to the 'test_price_finder.py' file to cover more scenarios, edge cases, and potential areas for improvement.
 
 
@@ -232,7 +231,6 @@ Added Testing (if necessary): Further tests can be added to the 'test_price_find
 ### Time Constraints and Future Plans:
 - Time Constraints: Limited time availability due to prioritizing code refactoring and function decomposition, preventing the addition of advanced features like API integration and UI enhancements.
 - Future Consideration: Despite the current limitations, these features are easily adjustable within the codebase and can be included in future iterations or by contributors.
-
 ### Testing File and Unit Testing:
 - Existing State: The provided 'test_price_finder.py' file includes tests for various functionalities, but some limitations exist.
 - Manual Verification: As certain functions output results through print statements, manual testing is required.
