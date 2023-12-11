@@ -67,14 +67,15 @@ pip install openpyxl
 ```
 ### Excel File Preparation:
 You can use the provided test file ('test.xlsx') or prepare your Excel file from QuickBooks.<br>
+
 For QuickBooks users:<br>
-Export the "Sales by Customer Detail" report as an Excel file.<br>
-Adjust the Excel columns to match the project requirements:<br>
-- Delete Column A (Customer Column)
-- Delete Column D (Transaction Type)
-- Delete Column C (Invoice Number)
-- Delete Columns J and K (Amount Line and Balance)
-Alternatively, adjust the column references in the code to match your Excel file's structure.<br>
+1. Export the "Sales by Customer Detail" report as an Excel file.<br>
+2. Adjust the Excel columns to match the project requirements:<br>
+ - Delete Column A (Customer Column)
+ - Delete Column D (Transaction Type)
+ - Delete Column C (Invoice Number)
+ - Delete Columns J and K (Amount Line and Balance)
+3. Alternatively, adjust the column references in the code to match your Excel file's structure.<br>
 
 ### Running the Program:
 1. Clone the repository or download the 'price_finder.py' file.
