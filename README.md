@@ -69,7 +69,7 @@ pip install openpyxl
 You can use the provided test file ('test.xlsx') or prepare your Excel file from QuickBooks.<br>
 
 For QuickBooks users:<br>
-1. Export the "Sales by Customer Detail" report as an Excel file.<br>
+1. Export the "Sales by Customer Detail" report as an Excel file. Make sure it's not on the classic view, or else customer's name will not be on every row<br>
 2. Adjust the Excel columns to match the project requirements:<br>
  - Delete Column A (Customer Column)
  - Delete Column D (Transaction Type)
